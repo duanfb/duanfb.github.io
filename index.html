@@ -276,7 +276,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/01/neoduan/" itemprop="url">neoduan</a></h1>
+                <a class="post-title-link" href="/2017/06/01/neoduan/" itemprop="url">记录使用Hexo搭建个人博客</a></h1>
         
 
         <div class="post-meta">
@@ -325,8 +325,41 @@
       
         
           
-            <p>欢迎来到我的技术博客</p>
+            <h3 id="注册GitHub账户并新建仓库"><a href="#注册GitHub账户并新建仓库" class="headerlink" title="注册GitHub账户并新建仓库"></a>注册GitHub账户并新建仓库</h3><pre><code>1.访问Github官网注册账户https://github.com/
+2.新建仓库名为：xxx.github.io
+</code></pre><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><pre><code>1. 下载地址:https://nodejs.org/en/download/
+2. 依照提示步骤安装即可
+3. 安装过程，软件已自动添加环境变量到Path，打开cmd：hexo -v验证是否安装成功
+</code></pre><h3 id="下载Git"><a href="#下载Git" class="headerlink" title="下载Git"></a>下载Git</h3><pre><code>https://git-scm.com/并安装，配置环境变量并验证是否配置成功
+生成公钥添加到你的github账户
+</code></pre><h3 id="创建本地Hexo仓库"><a href="#创建本地Hexo仓库" class="headerlink" title="创建本地Hexo仓库"></a>创建本地Hexo仓库</h3><pre><code>*新建一个目录如：blog，在该目录下打开cmd，
+    1.安装Hexo 输入：npm install -g hexo
+    2.初始化blog,执行：hexo init
+    3.生成静态页面：hexo generate (hexo g也可)
+    4.本地启动：hexo server
+        浏览器输入http://localhost:4000即可查看
+</code></pre><h3 id="GitHub关联你的本地仓库"><a href="#GitHub关联你的本地仓库" class="headerlink" title="GitHub关联你的本地仓库"></a>GitHub关联你的本地仓库</h3><pre><code>1.打开hexo本地仓库blog，找到_config.yml  
+     title: Neo博客
+     subtitle: 技术博客
+     description: 分享学习工作经验等
+     author: Neo Duan
+     language: zh-Hans
+     timezone: Asia/Shanghai
 
+deploy:
+  type: git 
+  repo: https://github.com/duanfb/duanfb.github.io.git 
+  branch: master
+
+  2.按照你的配置修改以上后，执行：npm install hexo-deployer-git --save
+  使hexo关联到git
+</code></pre><h3 id="部署本地Hexo到GitHub"><a href="#部署本地Hexo到GitHub" class="headerlink" title="部署本地Hexo到GitHub"></a>部署本地Hexo到GitHub</h3><pre><code>1.由于是通过git上传到github，所以前面步骤配置SSH是为了这步考虑
+2.部署三步走：
+    hexo clean //clean
+    hexo g //生成静态页面
+    hexo d //发布并push到Github
+3.成功后，通过https://XXXX.github.io/即可查看
+</code></pre>
           
         
       
