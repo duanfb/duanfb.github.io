@@ -359,6 +359,16 @@ deploy:
     hexo g //生成静态页面
     hexo d //发布并push到Github
 3.成功后，通过https://XXXX.github.io/即可查看
+</code></pre><h3 id="相关问题"><a href="#相关问题" class="headerlink" title="相关问题"></a>相关问题</h3><pre><code>ERROR Deployer not found: git 或者 ERROR Deployer not found: github
+解决方法： npm install hexo-deployer-git --save
+如果还是报以上错误，建议再次新建一个本地仓库
+</code></pre><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><pre><code>hexo new&quot;postName&quot; #新建文章
+hexo new page&quot;pageName&quot; #新建页面
+hexo generate #生成静态页面至public目录
+hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）
+hexo deploy #将.deploy目录部署到GitHub
+hexo help # 查看帮助
+hexo version #查看Hexo的版本
 </code></pre>
           
         

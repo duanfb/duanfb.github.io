@@ -99,7 +99,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/01/neoduan/index.html">
 <meta property="og:site_name" content="Neo博客">
 <meta property="og:description" content="注册GitHub账户并新建仓库1.访问Github官网注册账户https://github.com/ 2.新建仓库名为：xxx.github.io 安装Node.js1. 下载地址:https://nodejs.org/en/download/ 2. 依照提示步骤安装即可 3. 安装过程，软件已自动添加环境变量到Path，打开cmd：hexo -v验证是否安装成功 下载Githttps://git">
-<meta property="og:updated_time" content="2017-06-02T04:04:14.894Z">
+<meta property="og:updated_time" content="2017-06-02T04:55:50.011Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="记录使用Hexo搭建个人博客">
 <meta name="twitter:description" content="注册GitHub账户并新建仓库1.访问Github官网注册账户https://github.com/ 2.新建仓库名为：xxx.github.io 安装Node.js1. 下载地址:https://nodejs.org/en/download/ 2. 依照提示步骤安装即可 3. 安装过程，软件已自动添加环境变量到Path，打开cmd：hexo -v验证是否安装成功 下载Githttps://git">
@@ -354,6 +354,16 @@ deploy:
     hexo g //生成静态页面
     hexo d //发布并push到Github
 3.成功后，通过https://XXXX.github.io/即可查看
+</code></pre><h3 id="相关问题"><a href="#相关问题" class="headerlink" title="相关问题"></a>相关问题</h3><pre><code>ERROR Deployer not found: git 或者 ERROR Deployer not found: github
+解决方法： npm install hexo-deployer-git --save
+如果还是报以上错误，建议再次新建一个本地仓库
+</code></pre><h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><pre><code>hexo new&quot;postName&quot; #新建文章
+hexo new page&quot;pageName&quot; #新建页面
+hexo generate #生成静态页面至public目录
+hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）
+hexo deploy #将.deploy目录部署到GitHub
+hexo help # 查看帮助
+hexo version #查看Hexo的版本
 </code></pre>
       
     </div>
@@ -493,7 +503,7 @@ deploy:
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#注册GitHub账户并新建仓库"><span class="nav-number">1.</span> <span class="nav-text">注册GitHub账户并新建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Node-js"><span class="nav-number">2.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载Git"><span class="nav-number">3.</span> <span class="nav-text">下载Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建本地Hexo仓库"><span class="nav-number">4.</span> <span class="nav-text">创建本地Hexo仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub关联你的本地仓库"><span class="nav-number">5.</span> <span class="nav-text">GitHub关联你的本地仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署本地Hexo到GitHub"><span class="nav-number">6.</span> <span class="nav-text">部署本地Hexo到GitHub</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#注册GitHub账户并新建仓库"><span class="nav-number">1.</span> <span class="nav-text">注册GitHub账户并新建仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Node-js"><span class="nav-number">2.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#下载Git"><span class="nav-number">3.</span> <span class="nav-text">下载Git</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#创建本地Hexo仓库"><span class="nav-number">4.</span> <span class="nav-text">创建本地Hexo仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub关联你的本地仓库"><span class="nav-number">5.</span> <span class="nav-text">GitHub关联你的本地仓库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#部署本地Hexo到GitHub"><span class="nav-number">6.</span> <span class="nav-text">部署本地Hexo到GitHub</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#相关问题"><span class="nav-number">7.</span> <span class="nav-text">相关问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用命令"><span class="nav-number">8.</span> <span class="nav-text">常用命令</span></a></li></ol></div>
             
 
           </div>
